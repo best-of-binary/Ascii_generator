@@ -41,36 +41,36 @@ Convert any video into high-quality ASCII art directly on your Android device us
 
 ---
 
-# Installation
+
+# Usage
+
+Launch # Installation
 
 Clone the repository.
 
 ```bash
-git clone https://github.com/<username>/<repository>.git
-cd <repository>
+git clone https://github.com/best-of-binary/Ascii_generator.git
+```
+
+Enter the project directory.
+
+```bash
+cd Ascii_generator
+```
+
+Copy the executable files to your Termux home directory and make them executable.
+
+```bash
+cp ascii setup.sh ~/
+cd ~
+chmod +x ascii setup.sh
 ```
 
 Run the installer.
 
 ```bash
 bash setup.sh
-```
-
-The installer automatically installs:
-
-- Python
-- OpenCV
-- NumPy
-- FFmpeg
-- Termux:API
-
-Existing packages are detected automatically and skipped.
-
----
-
-# Usage
-
-Launch the application.
+```the application.
 
 ```bash
 ./ascii
