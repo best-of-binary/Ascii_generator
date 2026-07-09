@@ -180,4 +180,4 @@ If you find this project useful and would like to support future development, co
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the hentai License.
