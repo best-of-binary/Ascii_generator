@@ -20,11 +20,11 @@ Convert any video into high-quality ASCII art directly on your Android device us
 
 ---
 
-# Features
+## Features
 
-- Convert videos into ASCII-rendered animations frame by frame.
+- Convert videos into high-quality ASCII-rendered animations frame by frame.
 - Multi-core rendering for faster processing.
-- Adjustable Grid Size and Font Size.
+- Adjustable **Grid Size** and **Font Size**.
 - Built-in Android file picker.
 - Automatic dependency installation.
 - Automatic GitHub update checker.
@@ -33,7 +33,7 @@ Convert any video into high-quality ASCII art directly on your Android device us
 
 ---
 
-# Requirements
+## Requirements
 
 - Android device
 - Termux (F-Droid version recommended)
@@ -41,10 +41,7 @@ Convert any video into high-quality ASCII art directly on your Android device us
 
 ---
 
-
-# Usage
-
-Launch # Installation
+## Installation
 
 Clone the repository.
 
@@ -52,25 +49,39 @@ Clone the repository.
 git clone https://github.com/best-of-binary/Ascii_generator.git
 ```
 
-Enter the project directory.
+Copy the launcher and installer to your Termux home directory.
 
 ```bash
-cd Ascii_generator
+cp Ascii_generator/ascii Ascii_generator/setup.sh ~/
 ```
 
-Copy the executable files to your Termux home directory and make them executable.
+Make both files executable.
 
 ```bash
-cp ascii setup.sh ~/
-cd ~
-chmod +x ascii setup.sh
+chmod +x ~/ascii ~/setup.sh
 ```
 
 Run the installer.
 
 ```bash
-bash setup.sh
-```the application.
+bash ~/setup.sh
+```
+
+The installer automatically installs:
+
+- Python
+- OpenCV
+- NumPy
+- FFmpeg
+- Termux:API
+
+Existing packages are detected automatically and skipped.
+
+---
+
+## Usage
+
+Launch the application.
 
 ```bash
 ./ascii
@@ -102,27 +113,26 @@ Your converted video will be saved to:
 
 ---
 
-# Settings
+## Settings
 
 ### Grid Size
 
-ㅤControls the size of each ASCII glyph.
+Controls the size of each ASCII glyph.
 
-ㅤ• Smaller value = Higher detail
-
-ㅤ• Larger value = Faster rendering
+- Smaller value = Higher detail
+- Larger value = Faster rendering
 
 ### Font Size
 
-ㅤAdjusts the size of ASCII characters within each grid cell.
+Adjusts the size of ASCII characters within each grid cell.
 
 ### Rollback
 
-ㅤRestore any previously installed version of the application.
+Restore any previously installed version of the application.
 
 ---
 
-# Updating
+## Updating
 
 The application automatically checks GitHub Releases whenever it starts.
 
@@ -130,23 +140,23 @@ When an update is available, you'll be shown:
 
 - Latest version
 - Release notes
-- Update Now
-- Later
+- **Update Now**
+- **Later**
 
 ---
 
-# Troubleshooting
+## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
-| Permission denied running `./ascii` or `./setup.sh` | `chmod +x ascii setup.sh` |
+| Permission denied running `./ascii` or `./setup.sh` | `chmod +x ~/ascii ~/setup.sh` |
 | File picker doesn't open | Install the **Termux:API** application from F-Droid |
-| `ffmpeg` not found | Run `bash setup.sh` again |
+| `ffmpeg` not found | Run `bash ~/setup.sh` again |
 | Slow rendering | Increase **Grid Size** or convert shorter videos |
 
 ---
 
-# Output Directory
+## Output Directory
 
 ```text
 /storage/emulated/0/ASCII/OUTPUT/
@@ -154,20 +164,20 @@ When an update is available, you'll be shown:
 
 ---
 
-# Credits
+## Credits
 
 Developed by **@best_of_binary**
 
 ---
 
-# Support
+## Support
 
-If you find this project useful and would like to support future development, consider supporting me on social media.
+If you find this project useful and would like to support future development, consider following me on Instagram.
 
-social Media
-
-```text
-https://www.instagram.com/best_of_binary
-```
+**Instagram:** https://www.instagram.com/best_of_binary
 
 ---
+
+## License
+
+This project is licensed under the MIT License.
