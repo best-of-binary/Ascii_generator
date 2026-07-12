@@ -37,6 +37,7 @@ Convert any video into high-quality ASCII art directly on your Android device us
 
 - Android device
 - Termux (F-Droid version recommended)
+- Termux Api installed
 - Approximately **200 MB** of free storage
 - Python installed
 
